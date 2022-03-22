@@ -5,7 +5,7 @@ etcd学习项目
 
 下载解压，运行二进制命令即可！
 
-[etcd 官方安装文档](https://etcd.io/docs/v3.5/install/)
+- [etcd 官方安装文档](https://etcd.io/docs/v3.5/install/)
 
 # etcd 基础使用
 
@@ -53,4 +53,25 @@ $ bin\etcd-v3.5.2-windows-amd64\etcdutl.exe version
 不指定数据目录(data-dir)的情况下，etcd 默认在当前目录下创建 default.etcd 目录并将其做为etcd的数据目录
 ```shell
 $ ll default.etcd
+```
+
+# etcd Key-value 命令
+
+- [Key-value commands](bin/etcd-v3.5.2-linux-amd64/README-etcdctl.md)
+
+一、KV CRUD（增查改删）命令
+```shell
+$ cd bin/etcd-v3.5.2-linux-amd64/
+
+# 增
+$ ./etcdctl put name "李 威"
+
+# 查
+$ ./etcdctl get name
+
+# 改
+$ ./etcdctl put name SparkLee
+
+# 删
+$ ./etcdctl del name
 ```
