@@ -13,6 +13,7 @@ etcd学习项目
 
 linux：
 ```shell
+$ chmod +x ./bin/etcd-v3.5.2-linux-amd64/etcd
 $ ./bin/etcd-v3.5.2-linux-amd64/etcd
 ```
 
@@ -25,6 +26,7 @@ $ bin\etcd-v3.5.2-windows-amd64\etcd.exe
 
 linux：
 ```shell
+$ chmod +x ./bin/etcd-v3.5.2-linux-amd64/etcdctl
 $ ./bin/etcd-v3.5.2-linux-amd64/etcdctl version
 ```
 
@@ -34,8 +36,10 @@ $ bin\etcd-v3.5.2-windows-amd64\etcdctl.exe version
 ```
 
 三、etcd 管理客户端连接
+
 linux：
 ```shell
+$ chmod +x ./bin/etcd-v3.5.2-linux-amd64/etcdutl
 $ ./bin/etcd-v3.5.2-linux-amd64/etcdutl version
 ```
 
