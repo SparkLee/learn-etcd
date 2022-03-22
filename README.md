@@ -47,3 +47,10 @@ windows：
 ```shell
 $ bin\etcd-v3.5.2-windows-amd64\etcdutl.exe version
 ```
+
+# etcd 数据持久化
+
+不指定数据目录(data-dir)的情况下，etcd 默认在当前目录下创建 default.etcd 目录并将其做为etcd的数据目录
+```shell
+$ ll default.etcd
+```
