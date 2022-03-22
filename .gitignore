@@ -1,3 +1,9 @@
+# GoLand
+.idea
+
+# default etcd data directory
+default.etcd
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
