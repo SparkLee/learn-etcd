@@ -2,11 +2,15 @@
 
 ### 用goreman启动etcd集群
 ```shell
-$ goreman start
+$ chmod +x goreman
+```
+
+```shell
+$ ./goreman start
 ```
 
 或指定配置文件：
 > 若使用默认配置文件(Procfile)，则无需指定。
 ```shell
-$ goreman -f Procfile start
+$ ./goreman -f Procfile start
 ```
