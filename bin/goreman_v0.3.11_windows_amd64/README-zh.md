@@ -11,3 +11,5 @@ $ goreman.exe start
 $ goreman.exe -f Procfile start
 ```
 
+更多请参考：
+[goreman_v0.3.11_linux_amd64/README-zh.md](../goreman_v0.3.11_linux_amd64/README-zh.md)
