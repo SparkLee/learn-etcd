@@ -15,6 +15,12 @@ $ ./goreman start
 $ ./goreman -f Procfile start
 ```
 
+启用tls安全连接（自动生成tls证书/密钥文件）：
+> [Automatic certificates](https://etcd.io/docs/v3.5/op-guide/clustering/#automatic-certificates)
+```shell
+$ ./goreman -f Procfile-tls start
+```
+
 ### 用goreman停止/启动单个实例（节点）
 ```shell
 # 停止

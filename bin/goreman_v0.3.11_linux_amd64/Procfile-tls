@@ -1,0 +1,8 @@
+# etcd1的配置信息
+etcd.tls1: ../etcd-v3.5.2-linux-amd64/etcd --name infra.tls1 --listen-client-urls https://127.0.0.1:12379 --advertise-client-urls https://127.0.0.1:12379 --listen-peer-urls https://127.0.0.1:12380 --initial-advertise-peer-urls https://127.0.0.1:12380 --initial-cluster-token etcd-cluster-1 --initial-cluster 'infra.tls1=https://127.0.0.1:12380,infra.tls2=https://127.0.0.1:22380,infra.tls3=https://127.0.0.1:32380' --initial-cluster-state new --auto-tls --peer-auto-tls
+
+# etcd2的配置信息
+etcd.tls2: ../etcd-v3.5.2-linux-amd64/etcd --name infra.tls2 --listen-client-urls https://127.0.0.1:22379 --advertise-client-urls https://127.0.0.1:22379 --listen-peer-urls https://127.0.0.1:22380 --initial-advertise-peer-urls https://127.0.0.1:22380 --initial-cluster-token etcd-cluster-1 --initial-cluster 'infra.tls1=https://127.0.0.1:12380,infra.tls2=https://127.0.0.1:22380,infra.tls3=https://127.0.0.1:32380' --initial-cluster-state new --auto-tls --peer-auto-tls
+
+# etcd3的配置信息
+etcd.tls3: ../etcd-v3.5.2-linux-amd64/etcd --name infra.tls3 --listen-client-urls https://127.0.0.1:32379 --advertise-client-urls https://127.0.0.1:32379 --listen-peer-urls https://127.0.0.1:32380 --initial-advertise-peer-urls https://127.0.0.1:32380 --initial-cluster-token etcd-cluster-1 --initial-cluster 'infra.tls1=https://127.0.0.1:12380,infra.tls2=https://127.0.0.1:22380,infra.tls3=https://127.0.0.1:32380' --initial-cluster-state new --auto-tls --peer-auto-tls
