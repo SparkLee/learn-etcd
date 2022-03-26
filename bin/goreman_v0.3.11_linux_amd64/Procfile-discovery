@@ -1,0 +1,8 @@
+# etcd1的配置信息
+etcd.discovery1: ../etcd-v3.5.2-linux-amd64/etcd --name infra.discovery1 --listen-client-urls https://127.0.0.1:12379 --advertise-client-urls https://127.0.0.1:12379 --listen-peer-urls https://127.0.0.1:12380 --initial-advertise-peer-urls https://127.0.0.1:12380 --discovery https://discovery.etcd.io/beb27f7115d31dd0477c208a313ca9f7
+
+# etcd2的配置信息
+etcd.discovery2: ../etcd-v3.5.2-linux-amd64/etcd --name infra.discovery2 --listen-client-urls https://127.0.0.1:22379 --advertise-client-urls https://127.0.0.1:22379 --listen-peer-urls https://127.0.0.1:22380 --initial-advertise-peer-urls https://127.0.0.1:22380 --discovery https://discovery.etcd.io/beb27f7115d31dd0477c208a313ca9f7
+
+# etcd3的配置信息
+etcd.discovery3: ../etcd-v3.5.2-linux-amd64/etcd --name infra.discovery3 --listen-client-urls https://127.0.0.1:32379 --advertise-client-urls https://127.0.0.1:32379 --listen-peer-urls https://127.0.0.1:32380 --initial-advertise-peer-urls https://127.0.0.1:32380 --discovery https://discovery.etcd.io/beb27f7115d31dd0477c208a313ca9f7

@@ -1,6 +1,7 @@
 # 使用goreman管理本地etcd多实例集群
 
 ### 用goreman启动etcd集群
+一、启动etcd集群
 ```shell
 $ chmod +x goreman
 ```
@@ -15,10 +16,26 @@ $ ./goreman start
 $ ./goreman -f Procfile start
 ```
 
-启用tls安全连接（自动生成tls证书/密钥文件）：
-> [Automatic certificates](https://etcd.io/docs/v3.5/op-guide/clustering/#automatic-certificates)
+二、启用tls安全连接启动etcd集群
+> 自动生成tls证书/密钥文件：[Automatic certificates](https://etcd.io/docs/v3.5/op-guide/clustering/#automatic-certificates)
 ```shell
 $ ./goreman -f Procfile-tls start
+```
+
+三、使用etcd自发现模式启动etcd集群
+> [etcd discovery](https://etcd.io/docs/v3.5/op-guide/clustering/#etcd-discovery)
+
+获取服务发现URL：
+> 通过etcd官方提供的dicovery服务创建一个指定集群大小的服务发现URL。
+```shell
+$ curl https://discovery.etcd.io/new?size=3
+
+返回服务发现URL：https://discovery.etcd.io/4c40bf442c133d672518ee44a58d34a5
+```
+
+启动etcd集群
+```shell
+$ ./goreman -f Procfile-discovery start
 ```
 
 ### 用goreman停止/启动单个实例（节点）
