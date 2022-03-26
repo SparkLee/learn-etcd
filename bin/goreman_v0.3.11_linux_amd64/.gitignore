@@ -1,2 +1,7 @@
 # etcd默认数据目录
-default.etcd
+infra1.etcd
+infra2.etcd
+infra3.etcd
+infra.tls1.etcd
+infra.tls2.etcd
+infra.tls3.etcd
