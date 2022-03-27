@@ -75,3 +75,9 @@ $ ./etcdctl put name SparkLee
 # 删
 $ ./etcdctl del name
 ```
+
+# 使用goreman管理本地etcd多实例集群
+[使用goreman管理本地etcd多实例集群](bin/goreman_v0.3.11_linux_amd64/README-zh.md)
+
+# 用systemd管理etcd集群
+[用systemd管理etcd集群](systemd/README.md)

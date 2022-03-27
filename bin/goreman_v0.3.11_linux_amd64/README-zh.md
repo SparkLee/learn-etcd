@@ -38,7 +38,7 @@ $ curl https://discovery.etcd.io/new?size=3
 $ ./goreman -f Procfile-discovery start
 ```
 
-### 用goreman停止/启动单个实例（节点）
+### 用goreman停止/启动集群中的单个实例（节点）
 ```shell
 # 停止
 $ ./goreman run stop etcd3
