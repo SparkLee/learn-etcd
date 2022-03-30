@@ -10,3 +10,13 @@ $ composer require start-point/etcd-php ^1.1
 ```shell
 $ composer require --dev phpunit/phpunit ^8
 ```
+
+### 生成类自动加载文件
+```shell
+$ composer dump-autoload
+```
+
+### 运行 phpunit 测试
+```shell
+$ vendor/bin/phpunit
+```
