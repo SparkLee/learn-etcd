@@ -1,1 +1,0 @@
-{"version":1,"defects":{"ExampleTest::testName":3,"Tests\\KvTest::test_should_set_value_and_return_the_previous_value":3},"times":{"ExampleTest::testName":0.036,"Tests\\KvTest::testName":0.067,"Tests\\KvTest::test_should_set_value_and_return_the_previous_value":0.019,"Tests\\KvTest::test_should_set_value":0.085}}

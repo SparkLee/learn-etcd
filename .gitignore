@@ -4,6 +4,9 @@
 # default etcd data directory
 default.etcd
 
+# phpunit
+.phpunit.result.cache
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
